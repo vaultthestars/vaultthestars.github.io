@@ -1,0 +1,142 @@
+#logoBar{
+    width: 30vw;
+    height: 100vh;
+  }
+  #siteLogo{
+    width: 100%;
+  }
+  body {
+    display: grid;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(0,0,0);
+  }
+  #staffGallery{
+    width: 70vw;
+    display: inherit;
+  
+  }
+  .galleryImage{
+    width: 100%;
+    height: auto;
+    height: 300px;
+  }
+
+  .parallax {
+    /* The image used */
+    /* background-image: url("https://scontent-lga3-3.xx.fbcdn.net/v/t39.30808-6/476365606_23864208216500728_6531988651720563251_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_ohc=vIl2IlEAUCIQ7kNvgEy4mks&_nc_zt=23&_nc_ht=scontent-lga3-3.xx&_nc_gid=RJI8cq2dnqmXGmMHTaiTMA&oh=00_AYFO1NxxA_cRfIbuldlxa4I6j6AhlOA0vxPTBVND-RkTSg&oe=67DBDC6A"); */
+    background-image: url("./darkened.jpg");
+  
+    /* Set a specific height */
+    /* min-height: 80px;  */
+    height: 800px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: top;
+    opacity: 100%;
+    background-position-x: center;
+    background-size: cover;
+    /* scale: 100%; */
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .title {
+    text-align: center;
+    color: white;
+    font-family: "Geologica";
+    /* font-size:100px; */
+    font-size: 8vw;
+    font-weight: bold;
+  }
+  
+  .italic {
+    background-color: transparent;
+    height: 1000px;
+    text-align: center;
+    color: white;
+    font-family: "Geologica";
+    /* font-size:42px; */
+    font-size:3vw;
+    font-weight: lighter;
+    font-style: italic;
+  }
+
+  .menubutton {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: transparent; 
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    color: white;
+  }
+  .menubutton:hover {
+    /* background-color: yellow; */
+    background-color: rgba(0,0,0,0.5); 
+  }
+
+  .menutext {
+    text-align: center;
+    font-family: "Geologica";
+    /* font-size:24px; */
+    font-size:24px;
+  }
+
+  .menubarh {
+    display:flex; 
+    flex-direction: row; 
+    justify-content: flex-end; 
+    background-color: transparent;
+  }
+
+  .menubarv {
+    display: none;
+    height: 0%; 
+    background-color: rgba(37, 74, 33, 0.592);
+    overflow: hidden;
+    position: absolute;
+    right: 0px;
+    top: 100px;
+    flex-direction: column; 
+    justify-content: flex-end; 
+    align-items: flex-end;
+
+    border-radius: 15px 0px 0px 15px;
+
+    transition-property: height;
+      transition-duration: 0.5s;
+  }
+
+  .footer {
+    text-align: center;
+    font-family: "Geologica";
+    
+    position: relative;
+    left: 10px;
+    top: 15px;
+    color: white;
+    font-size: 15px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  @media screen and (max-width: 1000px) {
+    .menubarh {
+      display: none;
+    }
+
+    .menubarv {
+      display: flex;
+    }
+
+    .hamburger {
+      display: flex;
+    }
+    
+  }
+ 

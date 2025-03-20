@@ -1,0 +1,123 @@
+  <!-- TO RUN IN BROWSER:
+    1. Install vscode extension Name: open in `browser open-in-browser` by TechER
+    2. Right click html file and either run in default browser or another browser
+  -->
+
+
+<!-- DONE: Make this work for every window size! -->
+
+<!-- TODO: Add a footer! -->
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>HTML/CSS Studio</title>
+      <!-- import CSS styles -->
+      <link rel="stylesheet" href="styles.css" /> 
+      <link href='https://fonts.googleapis.com/css?family=Geologica' rel='stylesheet'></link>
+    </head>
+  
+    <!-- page content goes into <body> -->
+    <body>
+      <div class="parallax">
+        <div style = "position: absolute; left: 0; top: 40%; width: 100%; text-align: center">
+          <span class = "title">
+          Fairview Farms
+          </span>
+          <br/>
+          <span class = "italic">
+          From our farm to your table
+          </span>
+        </div>
+
+        <img src = "./logo.png" width = "100px" style = "position: absolute; left: 15px; top: 15px"/>
+        <img class = "hamburger" src = "./hamburger.png" width = "60px" style = "position: absolute; right: 35px; top: 35px" onclick = "myFunction()"/>
+        <div class = "menubarh">
+            <div class = "menubutton">
+                <span class = "menutext">
+                    Home
+                </span>
+            </div>
+            <div class = "menubutton">
+                <span class = "menutext">
+                    Our Products
+                </span>
+            </div>
+            <div class = "menubutton">
+                <span class = "menutext">
+                    Hours
+                </span>
+            </div>
+            <div class = "menubutton">
+                <span class = "menutext">
+                    Gallery
+                </span>
+            </div>
+            <div class = "menubutton">
+                <span class = "menutext">
+                    About Us
+                </span>
+            </div>
+            <div class = "menubutton">
+                <span class = "menutext">
+                    Contact
+                </span>
+            </div>
+        </div>
+
+        <div class = "menubarv" id="menubarv">
+          <div class = "menubutton">
+              <span class = "menutext">
+                  Home
+              </span>
+          </div>
+          <div class = "menubutton">
+              <span class = "menutext">
+                  Our Products
+              </span>
+          </div>
+          <div class = "menubutton">
+              <span class = "menutext">
+                  Hours
+              </span>
+          </div>
+          <div class = "menubutton">
+              <span class = "menutext">
+                  Gallery
+              </span>
+          </div>
+          <div class = "menubutton">
+              <span class = "menutext">
+                  About Us
+              </span>
+          </div>
+          <div class = "menubutton">
+              <span class = "menutext">
+                  Contact
+              </span>
+          </div>
+      </div>
+
+      </div>
+
+      <div style= "background-color: rgb(43, 43, 43); height: 50px">
+        <span class = "footer">
+          © 2024 by Fairview Farm at Mecox LLC
+        </span>
+      </div>
+
+      <script>
+        function myFunction() {
+          var x = document.getElementById("menubarv");
+          if (x.style.height === "300px") {
+            // x.style.display = "none";
+            x.style.height = "0px"
+          } else {
+            x.style.height = "300px";
+          }
+        }
+        </script>
+
+    </body>
+  
+  </html>
